@@ -18,44 +18,44 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "BeraCard - O Banco Cripto Completo",
+  title: "Berabank - The Complete Crypto Bank",
   description:
-    "O primeiro cartão cripto construído nativamente na Berachain. Cartão internacional com saldo em fiat, caixinhas de investimento, rendimento via Infrared Finance e muito mais.",
+    "The first crypto card built natively on Berachain. International card with fiat balance, investment piggy banks, yield via Infrared Finance and much more.",
   keywords: [
-    "beracard",
+    "berabank",
     "berachain",
     "crypto card",
-    "cartão cripto",
+    "crypto banking",
     "honey",
     "infrared finance",
     "proof of liquidity",
     "web3",
     "decentralized finance",
   ],
-  authors: [{ name: "BeraCard Team" }],
-  creator: "BeraCard",
-  publisher: "BeraCard",
+  authors: [{ name: "Berabank Team" }],
+  creator: "Berabank",
+  publisher: "Berabank",
   robots: "index, follow",
   openGraph: {
-    title: "BeraCard - O Banco Cripto Completo",
+    title: "Berabank - The Complete Crypto Bank",
     description:
-      "O primeiro cartão cripto construído nativamente na Berachain. Experiência bancária completa com cripto.",
+      "The first crypto card built natively on Berachain. Complete banking experience with crypto.",
     type: "website",
-    locale: "pt_BR",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BeraCard - O Banco Cripto Completo",
+    title: "Berabank - The Complete Crypto Bank",
     description:
-      "O primeiro cartão cripto construído nativamente na Berachain. Experiência bancária completa com cripto.",
+      "The first crypto card built natively on Berachain. Complete banking experience with crypto.",
   },
   icons: {
     icon: [
-      { url: "/images/logo.PNG", sizes: "64x64", type: "image/png" },
-      { url: "/images/logo.PNG", sizes: "192x192", type: "image/png" },
-      { url: "/images/logo.PNG", sizes: "512x512", type: "image/png" },
+      { url: "/logo_icon.png", sizes: "64x64", type: "image/png" },
+      { url: "/logo_icon.png", sizes: "192x192", type: "image/png" },
+      { url: "/logo_icon.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: [{ url: "/images/logo.PNG", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/logo_icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
@@ -66,13 +66,12 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
-      lang="pt-BR"
+      lang="en"
       suppressHydrationWarning
       className={`scroll-smooth antialiased ${sora.variable} ${beVietnamPro.variable}`}
     >
       <head>
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/images/logo.PNG" />
+        <link rel="icon" href="/logo_icon.png" />
       </head>
       <body>
         {children}
@@ -103,4 +102,3 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
-

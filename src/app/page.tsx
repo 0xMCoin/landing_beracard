@@ -46,7 +46,7 @@ export default function Home() {
             variant="outline"
             className="border-gray-500 text-gray-900 hover:bg-gray-100"
           >
-            Entrar em Contato
+            Get in Touch
           </Button>
         </div>
       </nav>
@@ -54,7 +54,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-24 px-6 bg-[url('/bg_home.png')] bg-cover bg-center min-h-screen relative">
         <div className="container mx-auto max-w-5xl text-center relative z-10">
-          <div className="absolute inset-0 -m-8 blur-lg bg-black/30 rounded-2xl"></div>
+          <div className="absolute inset-0 -m-8 blur-2xl bg-black/30 rounded-2xl"></div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,31 +62,31 @@ export default function Home() {
             className="relative z-10"
           >
             <p className="text-sm font-medium text-white mb-6 uppercase tracking-wider">
-              Construído nativamente na Berachain
+              Built Natively on Berachain
             </p>
             <h1 className="text-5xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight">
-              O Banco Cripto
+              The Complete
               <br />
-              <span className="text-brand-blue">Completo</span>
+              <span className="text-brand-blue">Crypto Bank</span>
             </h1>
             <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-              A primeira solução financeira completa construída nativamente
-              sobre Berachain. Cartão internacional, investimentos automáticos e
-              experiência bancária moderna.
+              The first complete financial solution built natively on Berachain.
+              International card, automatic investments, and modern banking
+              experience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
                 className="bg-brand-blue hover:bg-brand-blue/90 text-white"
               >
-                Solicitar Cartão
+                Request Card
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-gray-500 text-gray-900 hover:bg-gray-100"
               >
-                Saiba Mais
+                Learn More
               </Button>
             </div>
           </motion.div>
@@ -112,32 +112,31 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              O Estado Atual dos Cartões Cripto
+              Current State of Crypto Cards
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Os cartões cripto atuais ainda funcionam como pré-pagos com
-              conversão simples, sem oferecer funcionalidades de um banco
-              moderno.
+              Current crypto cards still work like prepaid cards with simple
+              conversion, without offering modern banking functionalities.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Falta de Ferramentas Financeiras",
-                desc: "Sem metas de investimento, sem automações, sem planejamento financeiro real.",
+                title: "Lack of Financial Tools",
+                desc: "No investment goals, no automations, no real financial planning.",
               },
               {
-                title: "Integração Web3 Superficial",
-                desc: "Não utilizam staking e liquidez de forma nativa e eficiente.",
+                title: "Superficial Web3 Integration",
+                desc: "They don't use staking and liquidity in a native and efficient way.",
               },
               {
-                title: "Experiência Difícil",
-                desc: "Saldo exibido em tokens voláteis, sem abstração para moeda local.",
+                title: "Difficult Experience",
+                desc: "Balance displayed in volatile tokens, without local currency abstraction.",
               },
               {
-                title: "Depósitos Restritos",
-                desc: "Limitados a poucas redes, sem suporte multi-chain verdadeiro.",
+                title: "Restricted Deposits",
+                desc: "Limited to few networks, without true multi-chain support.",
               },
             ].map((item, idx) => (
               <motion.div
@@ -174,11 +173,11 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Nossa Visão
+              Our Vision
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Imaginamos uma experiência onde o cartão cripto funciona como um
-              banco completo, simples, amigável e global.
+              We imagine an experience where the crypto card works like a
+              complete bank, simple, friendly and global.
             </p>
           </motion.div>
 
@@ -186,23 +185,23 @@ export default function Home() {
             {[
               {
                 icon: CreditCard,
-                title: "Saldo em Fiat Local",
-                desc: "Exibe diretamente na moeda local, mesmo sendo custodiado em cripto",
+                title: "Local Fiat Balance",
+                desc: "Displays directly in local currency, even when custodied in crypto",
               },
               {
                 icon: Target,
-                title: "Caixinhas de Investimento",
-                desc: "Para objetivos reais: casa, carro, reserva de emergência, viagem",
+                title: "Investment Piggy Banks",
+                desc: "For real goals: house, car, emergency fund, travel",
               },
               {
                 icon: TrendingUp,
-                title: "Rendimento Real",
-                desc: "Usa Infrared Finance + Proof-of-Liquidity para gerar rendimento",
+                title: "Real Yield",
+                desc: "Uses Infrared Finance + Proof-of-Liquidity to generate yield",
               },
               {
                 icon: Globe,
-                title: "Multi-Chain Universal",
-                desc: "Recebe crypto de qualquer rede via QR code estático com conversão automática",
+                title: "Universal Multi-Chain",
+                desc: "Receives crypto from any network via static QR code with automatic conversion",
               },
             ].map((item, idx) => (
               <motion.div
@@ -247,39 +246,39 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              A Solução
+              The Solution
             </h2>
             <p className="text-lg text-gray-500">
-              Cartão Global + Infra Financeira Nativa da Berachain
+              Global Card + Native Berachain Financial Infrastructure
             </p>
           </motion.div>
 
           <div className="space-y-4 max-w-4xl mx-auto">
             {[
               {
-                phase: "Fase 1",
-                title: "Cartão Internacional com Saldo Abstrato em Fiat",
-                desc: "Mesmo armazenado em HONEY/USDT/USDC, o usuário vê tudo na moeda local.",
+                phase: "Phase 1",
+                title: "International Card with Abstract Fiat Balance",
+                desc: "Even stored in HONEY/USDT/USDC, user sees everything in local currency.",
               },
               {
-                phase: "Fase 1",
-                title: "Depósitos Rápidos pela Berachain",
-                desc: "HONEY, USDT e USDC com conversão automática.",
+                phase: "Phase 1",
+                title: "Fast Deposits via Berachain",
+                desc: "HONEY, USDT and USDC with automatic conversion.",
               },
               {
-                phase: "Fase 2",
-                title: "Caixinhas com Investimento Automático",
-                desc: "Objetivos personalizados com rendimento usando Infrared Finance + PoL.",
+                phase: "Phase 2",
+                title: "Piggy Banks with Automatic Investment",
+                desc: "Personalized goals with yield using Infrared Finance + PoL.",
               },
               {
-                phase: "Fase 3",
-                title: "QR Code Multi-Chain para Recebimentos Universais",
-                desc: "Aceita tokens de qualquer rede com bridging + swap + conversão automática para HONEY.",
+                phase: "Phase 3",
+                title: "Multi-Chain QR Code for Universal Payments",
+                desc: "Accepts tokens from any network with bridging + swap + automatic conversion to HONEY.",
               },
               {
-                phase: "Futuro",
-                title: "Sistema de Crédito Bancário Próprio",
-                desc: "Limite dinâmico baseado em comportamento financeiro e métricas on-chain.",
+                phase: "Future",
+                title: "Own Banking Credit System",
+                desc: "Dynamic limit based on financial behavior and on-chain metrics.",
               },
             ].map((feature, idx) => (
               <motion.div
@@ -321,11 +320,11 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Concorrentes vs. Nosso Produto
+              Competitors vs. Our Product
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Somos a primeira solução financeira completa construída
-              nativamente sobre Berachain.
+              We are the first complete financial solution built natively on
+              Berachain.
             </p>
           </motion.div>
 
@@ -334,7 +333,7 @@ export default function Home() {
               <thead>
                 <tr className="bg-gray-100 border-b border-gray-300">
                   <th className="text-left p-4 font-semibold text-gray-900">
-                    Funcionalidade
+                    Feature
                   </th>
                   <th className="text-center p-4 font-semibold text-gray-900">
                     Crypto.com
@@ -352,32 +351,20 @@ export default function Home() {
               </thead>
               <tbody>
                 {[
-                  ["Cartão internacional", true, true, true, true],
-                  ["Saldo exibido em fiat local", false, false, true, true],
+                  ["International card", true, true, true, true],
+                  ["Balance displayed in local fiat", false, false, true, true],
                   [
-                    "Depósitos multi-chain com QR estático",
+                    "Multi-chain deposits with static QR",
                     false,
                     false,
                     false,
                     true,
                   ],
-                  [
-                    "Caixinhas/objetivos financeiros",
-                    false,
-                    false,
-                    false,
-                    true,
-                  ],
-                  ["Rendimento via Infrared + PoL", false, false, false, true],
-                  ["Sistema de crédito próprio", false, false, false, "futuro"],
-                  [
-                    "Construído nativamente na Berachain",
-                    false,
-                    false,
-                    false,
-                    true,
-                  ],
-                  ["Experiência bancária completa", false, false, false, true],
+                  ["Piggy banks/financial goals", false, false, false, true],
+                  ["Yield via Infrared + PoL", false, false, false, true],
+                  ["Own credit system", false, false, false, "future"],
+                  ["Built natively on Berachain", false, false, false, true],
+                  ["Complete banking experience", false, false, false, true],
                 ].map((row, idx) => (
                   <tr
                     key={idx}
@@ -438,58 +425,58 @@ export default function Home() {
               Roadmap
             </h2>
             <p className="text-lg text-gray-500">
-              Evolução planejada e uso estratégico do investimento
+              Planned evolution and strategic use of investment
             </p>
           </motion.div>
 
           <div className="space-y-8 max-w-4xl mx-auto">
             {[
               {
-                phase: "Fase 1",
+                phase: "Phase 1",
                 period: "Q1/Q2",
-                title: "Cartão Internacional",
+                title: "International Card",
                 items: [
-                  "Depósitos em HONEY, USDT, USDC",
-                  "Conversão automática para fiat",
+                  "Deposits in HONEY, USDT, USDC",
+                  "Automatic conversion to fiat",
                 ],
               },
               {
-                phase: "Fase 2",
+                phase: "Phase 2",
                 period: "Q2/Q3",
-                title: "Caixinhas e Objetivos",
+                title: "Piggy Banks and Goals",
                 items: [
-                  "Integração com Infrared Finance",
-                  "Staking automatizado via PoL",
+                  "Integration with Infrared Finance",
+                  "Automated staking via PoL",
                 ],
               },
               {
-                phase: "Fase 3",
+                phase: "Phase 3",
                 period: "Q3/Q4",
-                title: "QR Code Multi-Chain",
+                title: "Multi-Chain QR Code",
                 items: [
-                  "Bridging + conversão universal",
-                  "Ampliação de tokens e redes",
+                  "Bridging + universal conversion",
+                  "Expansion of tokens and networks",
                 ],
               },
               {
-                phase: "Fase 4",
+                phase: "Phase 4",
                 period: "Q4/2025",
-                title: "Expansão",
+                title: "Expansion",
                 items: [
-                  "Cashback nativo",
-                  "Cartões corporativos",
-                  "Gestão financeira avançada",
+                  "Native cashback",
+                  "Corporate cards",
+                  "Advanced financial management",
                 ],
               },
               {
-                phase: "Fase 5",
+                phase: "Phase 5",
                 period: "2026",
-                title: "Sistema de Crédito Bancário",
+                title: "Banking Credit System",
                 items: [
-                  "Limite dinâmico baseado em comportamento",
-                  "Dados on-chain como score",
-                  "Acesso a crédito dentro do ecossistema",
-                  "Possível colateralização opcional",
+                  "Dynamic limit based on behavior",
+                  "On-chain data as score",
+                  "Credit access within ecosystem",
+                  "Optional collateralization",
                 ],
               },
             ].map((phase, idx) => (
@@ -538,31 +525,31 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Uso do Investimento
+              Investment Usage
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                label: "Desenvolvimento Tecnológico",
+                label: "Technology Development",
                 value: 40,
-                desc: "App, backend, contratos, sistema de crédito, infra multi-chain",
+                desc: "App, backend, contracts, credit system, multi-chain infrastructure",
               },
               {
-                label: "Compliance e Licenças",
+                label: "Compliance and Licenses",
                 value: 25,
-                desc: "Compliance, emissora, licenças financeiras",
+                desc: "Compliance, issuer, financial licenses",
               },
               {
-                label: "Liquidez e Reservas",
+                label: "Liquidity and Reserves",
                 value: 20,
-                desc: "Liquidez e reservas operacionais",
+                desc: "Liquidity and operational reserves",
               },
               {
-                label: "Marketing e Comunidade",
+                label: "Marketing and Community",
                 value: 15,
-                desc: "Aquisição de usuários, marketing e comunidade",
+                desc: "User acquisition, marketing and community",
               },
             ].map((item, idx) => (
               <motion.div
@@ -612,13 +599,12 @@ export default function Home() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Seja um dos Primeiros
+              Be Among the First
             </h2>
             <p className="text-lg text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Junte-se à revolução do banco cripto completo. Construído
-              nativamente na{" "}
+              Join the complete crypto banking revolution. Built natively on{" "}
               <span className="text-brand-blue font-semibold">Berachain</span>{" "}
-              para oferecer a melhor experiência financeira descentralizada.
+              to offer the best decentralized financial experience.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -626,14 +612,14 @@ export default function Home() {
                 size="lg"
                 className="bg-brand-blue hover:bg-brand-blue/90 text-white"
               >
-                Solicitar Acesso Antecipado
+                Request Early Access
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-gray-500 text-gray-900 hover:bg-gray-100"
               >
-                Entrar em Contato
+                Get in Touch
               </Button>
             </div>
           </motion.div>
@@ -645,13 +631,10 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <img src="/images/logo.PNG" alt="BeraCard" className="h-8 w-8" />
-              <span className="text-lg font-semibold text-gray-900">
-                BeraCard
-              </span>
+              <img src="/logo.png" alt="Berabank" className="h-auto w-40" />
             </div>
             <p className="text-sm text-gray-500 text-center">
-              © 2024 BeraCard. Construído nativamente na Berachain.
+              © 2025 Berabank. Built natively on Berachain.
             </p>
           </div>
         </div>
