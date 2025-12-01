@@ -40,7 +40,11 @@ export default function Home() {
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between max-w-7xl">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="BeraCard" className="h-auto w-40" />
+            <img
+              src="/logo.png"
+              alt="Berabank"
+              className="h-auto w-32 sm:w-36 md:w-40"
+            />
           </div>
           <Button
             variant="outline"
@@ -76,11 +80,11 @@ export default function Home() {
       <section className="py-24 px-6 bg-gray-50 relative">
         <Image
           src="/bear_2.png"
-          alt="Problem"
-          width={10000}
-          height={10000}
+          alt="Problem illustration"
+          width={400}
+          height={400}
           draggable={false}
-          className="absolute hidden md:block bottom-0 right-14 w-[200px] h-[200px] md:w-[300px] md:h-[300px] object-contain"
+          className="absolute hidden md:block -bottom-20 right-4 w-48 h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 2xl:w-80 2xl:h-80 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 z-0"
         />
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -88,7 +92,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-16 relative z-10"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Current State of Crypto Cards
@@ -210,11 +214,11 @@ export default function Home() {
       <section className="py-24 px-6 bg-gray-50 relative">
         <Image
           src="/bear_1.png"
-          alt="Solution"
-          width={10000}
-          height={10000}
+          alt="Solution illustration"
+          width={600}
+          height={600}
           draggable={false}
-          className="absolute hidden md:block top-1/2 -translate-y-1/2 left-14 w-[200px] h-[200px] md:w-[500px] md:h-[500px] object-contain"
+          className="absolute hidden lg:block top-0 -left-8 w-72 h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 object-contain hover:opacity-90 transition-opacity duration-300 z-0"
         />
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -222,7 +226,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-16 relative z-10"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               The Solution
@@ -610,7 +614,11 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Berabank" className="h-auto w-40" />
+              <img
+                src="/logo.png"
+                alt="Berabank"
+                className="h-auto w-32 sm:w-36 md:w-40"
+              />
             </div>
             <p className="text-sm text-gray-500 text-center">
               © 2025 Berabank. Built natively on Berachain.
