@@ -311,7 +311,8 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="overflow-x-auto">
+          {/* Desktop Table */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full border-collapse bg-white border border-gray-300 rounded-lg">
               <thead>
                 <tr className="bg-gray-100 border-b border-gray-300">
@@ -380,7 +381,7 @@ export default function Home() {
                         <Check className="size-5 text-brand-blue mx-auto" />
                       ) : row[4] === "futuro" ? (
                         <span className="text-xs font-semibold text-brand-blue px-2 py-1 bg-brand-blue/10 rounded">
-                          Futuro
+                          Future
                         </span>
                       ) : (
                         <Check className="size-5 text-brand-blue mx-auto" />
@@ -390,6 +391,79 @@ export default function Home() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile Cards */}
+          <div className="md:hidden space-y-4">
+            {[
+              ["International card", true, true, true, true],
+              ["Balance displayed in local fiat", false, false, true, true],
+              [
+                "Multi-chain deposits with static QR",
+                false,
+                false,
+                false,
+                true,
+              ],
+              ["Piggy banks/financial goals", false, false, false, true],
+              ["Yield via Infrared + PoL", false, false, false, true],
+              ["Own credit system", false, false, false, "future"],
+              ["Built natively on Berachain", false, false, false, true],
+              ["Complete banking experience", false, false, false, true],
+            ].map((row, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                className="bg-white border border-gray-300 rounded-lg p-4"
+              >
+                <h3 className="font-semibold text-gray-900 mb-3 text-lg">
+                  {row[0]}
+                </h3>
+                <div className="grid grid-cols-4 gap-2">
+                  <div className="text-center">
+                    <div className="text-xs text-gray-500 mb-1">Crypto.com</div>
+                    {row[1] ? (
+                      <Check className="size-4 text-green-9 mx-auto" />
+                    ) : (
+                      <X className="size-4 text-gray-500 mx-auto" />
+                    )}
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-500 mb-1">Binance</div>
+                    {row[2] ? (
+                      <Check className="size-4 text-green-9 mx-auto" />
+                    ) : (
+                      <X className="size-4 text-gray-500 mx-auto" />
+                    )}
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-500 mb-1">Bitpay</div>
+                    {row[3] ? (
+                      <Check className="size-4 text-green-9 mx-auto" />
+                    ) : (
+                      <X className="size-4 text-gray-500 mx-auto" />
+                    )}
+                  </div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-500 mb-1 text-brand-blue font-semibold">
+                      BeraCard
+                    </div>
+                    {row[4] === true ? (
+                      <Check className="size-4 text-brand-blue mx-auto" />
+                    ) : row[4] === "future" ? (
+                      <span className="text-xs font-semibold text-brand-blue px-1 py-0.5 bg-brand-blue/10 rounded">
+                        Future
+                      </span>
+                    ) : (
+                      <Check className="size-4 text-brand-blue mx-auto" />
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
