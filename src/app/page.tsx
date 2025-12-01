@@ -52,7 +52,9 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-6 bg-[url('/bg_home.png')] bg-cover bg-center min-h-screen relative">
+      <section className="pt-16 pb-32 px-6 bg-[url('/bg_home.png')] bg-cover bg-center min-h-screen relative flex flex-col justify-center">
+        {/* Fade to bottom section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-gray-50"></div>
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <div className="absolute inset-0 -m-8 blur-2xl bg-black/30 rounded-2xl"></div>
           <motion.div
@@ -61,34 +63,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="relative z-10"
           >
-            <p className="text-sm font-medium text-white mb-6 uppercase tracking-wider">
-              Built Natively on Berachain
-            </p>
             <h1 className="text-5xl md:text-7xl font-bold mb-8 text-gray-900 leading-tight">
               The Complete
               <br />
-              <span className="text-brand-blue">Crypto Bank</span>
+              <span className="text-yellow-600">Crypto Bank</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-              The first complete financial solution built natively on Berachain.
-              International card, automatic investments, and modern banking
-              experience.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-brand-blue hover:bg-brand-blue/90 text-white"
-              >
-                Request Card
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-gray-500 text-gray-900 hover:bg-gray-100"
-              >
-                Learn More
-              </Button>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -101,7 +80,7 @@ export default function Home() {
           width={10000}
           height={10000}
           draggable={false}
-          className="absolute bottom-0 right-14 w-[200px] h-[200px] md:w-[300px] md:h-[300px] object-contain"
+          className="absolute hidden md:block bottom-0 right-14 w-[200px] h-[200px] md:w-[300px] md:h-[300px] object-contain"
         />
         <div className="container mx-auto max-w-6xl">
           <motion.div
@@ -235,7 +214,7 @@ export default function Home() {
           width={10000}
           height={10000}
           draggable={false}
-          className="absolute top-1/2 -translate-y-1/2 left-14 w-[200px] h-[200px] md:w-[500px] md:h-[500px] object-contain"
+          className="absolute hidden md:block top-1/2 -translate-y-1/2 left-14 w-[200px] h-[200px] md:w-[500px] md:h-[500px] object-contain"
         />
         <div className="container mx-auto max-w-6xl">
           <motion.div

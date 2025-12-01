@@ -86,7 +86,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             },
             success: {
               iconTheme: {
-                primary: "#41aec4",
+                primary: "#D4AF37",
                 secondary: "#ffffff",
               },
             },

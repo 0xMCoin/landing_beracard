@@ -25,18 +25,18 @@
   --neutral-12: #171717;
   
   /* Primary colors */
-  --primary-1: #eff6ff;
-  --primary-2: #dbeafe;
-  --primary-3: #bfdbfe;
-  --primary-4: #93c5fd;
-  --primary-5: #60a5fa;
-  --primary-6: #3b82f6;
-  --primary-7: #2563eb;
-  --primary-8: #1d4ed8;
-  --primary-9: #1e40af;
-  --primary-10: #1e3a8a;
-  --primary-11: #1e3a8a;
-  --primary-12: #172554;
+  --primary-1: #fefce8;
+  --primary-2: #fef3c7;
+  --primary-3: #fde68a;
+  --primary-4: #fcd34d;
+  --primary-5: #fbbf24;
+  --primary-6: #f59e0b;
+  --primary-7: #d97706;
+  --primary-8: #b45309;
+  --primary-9: #92400e;
+  --primary-10: #78350f;
+  --primary-11: #78350f;
+  --primary-12: #451a03;
   --primary-foreground: #ffffff;
   
   /* Error colors */

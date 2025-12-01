@@ -14,7 +14,7 @@ export default {
         background: "var(--neutral-2)",
         foreground: "var(--neutral-11)",
         brand: {
-          blue: "#41aec4",
+          blue: "#ca8a04",
           purple: "#1d224b",
           black: "#000000",
         },
